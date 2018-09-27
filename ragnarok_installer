@@ -100,7 +100,7 @@ fi
     sudo rm -rf /usr/bin/$COIN_CLI /usr/bin/$COIN_DAEMON > /dev/null 2>&1
     sudo rm -rf /tmp/*
     mkdir $CONFIGFOLDER
-    sudo rm -rf ~/Ragnarok    
+    sudo rm -rf ~/ragnarok
 echo -e "${GREEN}* Done${NONE}";
 }
 
@@ -535,7 +535,6 @@ function important_information() {
  echo
  echo -e "${RED} ${RED}Dragon${PURPLE}Lady Flexi-compile edit $SCRIPTVER${NC}"
  echo -e "${BLUE}================================================================================================================================${NC}"
- echo -e "${PURPLE}Windows Wallet Guide. https://github.com/Ragnarok/master/README.md${NC}"
  echo -e "${BLUE}================================================================================================================================${NC}"
  echo -e "${GREEN}$COIN_NAME Masternode is up and running listening on port${NC}${PURPLE}$COIN_PORT${NC}."
  echo -e "${GREEN}Configuration file is:${NC}${RED}$CFFULLPATH${NC}"
@@ -561,7 +560,7 @@ logo
  echo -e "${BLUE}================================================================================================================================${NC}"
  echo -e "${RED}Donations always accepted gratefully.${NC}"
  echo -e "${BLUE}================================================================================================================================${NC}"
- echo -e "${RED}Dragon${PURPLE}Lady ${BLUE}Ragnarok: ${WHITE}Wm8dAnLhcJcYuRYGBoL4NX2EepQeSBPDS3${NC}"
+ echo -e "${RED}Dragon${PURPLE}Lady ${RED}Ragnarok: ${WHITE}r8tyC5zJehvC8t4qgoHeREbbKa8vSH4Ywc{NC}"
  echo -e "${BLUE}================================================================================================================================${NC}"
 
 }
@@ -589,7 +588,7 @@ function important_information_wallet() {
  echo -e "${BLUE}================================================================================================================================${NC}"
  echo -e "${RED}Donations always accepted gratefully.${NC}"
  echo -e "${BLUE}================================================================================================================================${NC}"
- echo -e "${RED}Dragon${PURPLE}Lady ${BLUE}Ragnarok: ${WHITE}Wm8dAnLhcJcYuRYGBoL4NX2EepQeSBPDS3 ${NC}"
+ echo -e "${RED}Dragon${PURPLE}Lady ${RED}Ragnarok: ${WHITE}r8tyC5zJehvC8t4qgoHeREbbKa8vSH4Ywc ${NC}"
  echo -e "${BLUE}================================================================================================================================${NC}"
 
 }
@@ -611,10 +610,10 @@ function bootstrap() {
 function support() {
 memfree=$(free -m |sed -n '2,2p' |awk '{ print $4 }')
 swapspace=$(free -m |tail -n1 |awk '{ print $2 }')
-getinfo=$(/usr/local/bin/Ragnarok-cli getinfo)
-coldlook=$(cat ~/.Ragnarok/debug.log |grep cold)
-last20=$(tail ~/.Ragnarok/debug.log -n20)
-mnstatus=$(/usr/local/bin/Ragnarok-cli masternode status)
+getinfo=$(/usr/local/bin/ragnarok-cli getinfo)
+coldlook=$(cat ~/.ragnarok/debug.log |grep cold)
+last20=$(tail ~/.ragnarok/debug.log -n20)
+mnstatus=$(/usr/local/bin/ragnarok-cli masternode status)
 corecount=$(($(grep ^proc /proc/cpuinfo |tail -n1 |awk -F: '{print $2}')+1))
 synchedstatus=$(($COIN_CLI_COMMAND |grep 'IsBlockchainSynced' |awk '{ print $2 }'))
 
