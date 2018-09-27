@@ -4,7 +4,7 @@ This script allows for easy setup of linux masternode or CLI wallet.
 
 Just run with:
 ```bash
-bash <(curl https://raw.githubusercontent.com/ragnaproject/RagnarokInstaller/master/Ragnarok_installer)
+bash <(curl https://raw.githubusercontent.com/ragnaproject/RagnarokInstaller/master/ragnarok_installer)
 ```
 as root on your linux VPS, or computer if you just want CLI wallet. 
 
@@ -14,7 +14,7 @@ Shell script to install a [Ragnarok Masternode](https://ragnaproject.io) on a Li
 
 ## Installation
 ```
-bash <(curl https://raw.githubusercontent.com/ragnaproject/RagnarokInstaller/master/Ragnarok_installer)
+bash <(curl https://raw.githubusercontent.com/ragnaproject/RagnarokInstaller/master/ragnarok_installer)
 ```
 ***
 
