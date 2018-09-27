@@ -42,7 +42,7 @@ Alias Address Privkey TxHash TxIndex
 ```
 startmasternode alias false <name>  # Replace <name> with your masternode alias
 ```
-12. Login to your VPS and check your masternode status by running the following command. If you get **Status 4**, it means your masternode is active.
+11. Login to your VPS and check your masternode status by running the following command. If you get **Status 4**, it means your masternode is active.
 ```
 ragnarok-cli masternode status
 ```
