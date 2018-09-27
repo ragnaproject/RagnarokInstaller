@@ -265,13 +265,13 @@ echo -e "${YELLOW} Compiling using $CF Cores with load $CL"
 make -j$CF -l$CL > /dev/null 2>&1
 
 if [[ -d $(eval echo $COIN_PATH)  ]]; then
-cp src/Ragnarokd $(eval echo $COIN_PATH)
-cp src/Ragnarok-cli $(eval echo $COIN_PATH)
-cp src/Ragnarok-tx $(eval echo $COIN_PATH)
+cp src/ragnarokd $(eval echo $COIN_PATH)
+cp src/ragnarok-cli $(eval echo $COIN_PATH)
+cp src/ragnarok-tx $(eval echo $COIN_PATH)
 else 
-cp src/Ragnarokd /usr/bin
-cp src/Ragnarok-cli /usr/bin
-cp src/Ragnarok-tx /usr/bin
+cp src/ragnarokd /usr/bin
+cp src/ragnarok-cli /usr/bin
+cp src/ragnarok-tx /usr/bin
 COIN_PATH=/usr/bin
 fi
 
