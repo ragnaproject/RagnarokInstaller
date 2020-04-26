@@ -152,7 +152,7 @@ echo -e " ██║  ██║██║  ██║╚██████╔╝█
 echo -e " ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝ "
 sleep 3
 cd /tmp
-wget https://github.com/ragnaproject/Ragnarok/releases/download/3.1.4/ragnarok-3.1.4-x86_64-linux-static.zip > /dev/null 2>&1
+wget https://github.com/ragnaproject/Ragnarok/releases/download/v3.1.4/ragnarok-3.1.4-x86_64-linux-static.zip > /dev/null 2>&1
 unzip ragnarok-3.1.4-x86_64-linux-static.zip > /dev/null 2>&1
 mv ragnarok* /usr/local/bin/ > /dev/null 2>&1
 cd ..
