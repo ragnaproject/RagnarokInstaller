@@ -152,8 +152,8 @@ echo -e " ██║  ██║██║  ██║╚██████╔╝█
 echo -e " ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝ "
 sleep 3
 cd /tmp
-wget https://github.com/ragnaproject/Ragnarok/releases/download/v3.1.4/ragnarok-3.1.4-x86_64-linux-static.zip > /dev/null 2>&1
-unzip ragnarok-3.1.4-x86_64-linux-static.zip > /dev/null 2>&1
+wget https://github.com/ragnaproject/Ragnarok/releases/download/v3.1.4/ragnarok-3.1.4-x86_64-linux.zip > /dev/null 2>&1
+unzip ragnarok-3.1.4-x86_64-linux.zip > /dev/null 2>&1
 mv ragnarok* /usr/local/bin/ > /dev/null 2>&1
 cd ..
 rm -rf ragnarok*.zip
@@ -370,7 +370,8 @@ masternode=0
 staking=1
 externalip=$EXTERNALIP
 
-addnode=159.65.64.248
+addnode=88.198.159.210
+addnode=138.201.89.14
 
 EOF
 
